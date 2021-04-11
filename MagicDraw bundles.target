@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?pde version="3.8"?><target name="MagicDraw bundles" sequenceNumber="14">
+<locations>
+<location id="com.nomagic.magicdraw.platform.feature" path="${workspace_loc:/MagicDraw/MAGIC_DRAW_INSTALL_DIRECTORY/lib/bundles}" type="Feature"/>
+<location id="com.nomagic.magicdraw.product.feature" path="${workspace_loc:/MagicDraw/MAGIC_DRAW_INSTALL_DIRECTORY/lib/bundles}" type="Feature"/>
+<location path="${workspace_loc:/MagicDraw/MAGIC_DRAW_INSTALL_DIRECTORY/lib/bundles}" type="Directory"/>
+<location path="${workspace_loc:/MagicDraw/MAGIC_DRAW_INSTALL_DIRECTORY/openapi/ide/lib}" type="Directory"/>
+</locations>
+<launcherArgs>
+<vmArgs>-Xmx2000M
+-Xss1024K
+-XX:PermSize=60M
+-XX:MaxPermSize=200M
+-Dosgi.framework.extensions=reference:${file_uri:${workspace_loc:/MagicDraw/MAGIC_DRAW_INSTALL_DIRECTORY/lib/bundles}}/com.nomagic.magicdraw.osgi.fragment
+-Dosgi.bundlefile.limit=500
+-DLOCALCONFIG=true
+-Dmd.class.path="${project_classpath:MagicDrawWithAllPluginsLauncher}"
+-Dcom.nomagic.osgi.config.dir="${resource_loc:MagicDraw/MAGIC_DRAW_INSTALL_DIRECTORY}/configuration"
+-Desi.system.config="${resource_loc:MagicDraw/MAGIC_DRAW_INSTALL_DIRECTORY}/data/application.conf"
+-Dlogback.configurationFile="${resource_loc:MagicDraw/MAGIC_DRAW_INSTALL_DIRECTORY}/data/logback.xml"
+-Dinstall.root="${resource_loc:MagicDraw/MAGIC_DRAW_INSTALL_DIRECTORY}"
+-Dmd.plugins.dir="${resource_loc:MagicDraw/MAGIC_DRAW_INSTALL_DIRECTORY}/plugins;${workspace_loc}"</vmArgs>
+</launcherArgs>
+</target>

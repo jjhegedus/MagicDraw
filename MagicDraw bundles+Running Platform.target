@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?pde version="3.8"?><target name="MagicDraw bundles+Running Platform" sequenceNumber="56">
+<locations>
+<location id="org.eclipse.e4.rcp.source" path="${eclipse_home}" type="Feature"/>
+<location id="org.eclipse.e4.rcp" path="${eclipse_home}" type="Feature"/>
+<location id="org.eclipse.platform" path="${eclipse_home}" type="Feature"/>
+<location id="org.eclipse.platform.source" path="${eclipse_home}" type="Feature"/>
+<location id="com.nomagic.magicdraw.platform.feature" path="${workspace_loc:/MagicDraw/MAGIC_DRAW_INSTALL_DIRECTORY/lib/bundles}" type="Feature"/>
+<location id="org.eclipse.rcp.source" path="${eclipse_home}" type="Feature"/>
+<location id="org.eclipse.rcp" path="${eclipse_home}" type="Feature"/>
+<location id="com.nomagic.magicdraw.product.feature" path="${workspace_loc:/MagicDraw/MAGIC_DRAW_INSTALL_DIRECTORY/lib/bundles}" type="Feature"/>
+<location path="${workspace_loc:/MagicDraw/MAGIC_DRAW_INSTALL_DIRECTORY/lib/bundles}" type="Directory"/>
+</locations>
+</target>
